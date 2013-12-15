@@ -103,16 +103,58 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Active__c</fullName>
+        <fullName>Default_Rate_Note__c</fullName>
         <externalId>false</externalId>
-        <label>Active</label>
+        <label>Default Rate Note</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Default_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Rate</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delinquency_Rate_Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Delinquency Rate Note</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Delinquency_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Delinquency Rate</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Due_Diligence_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Diligence Type</label>
         <picklist>
             <picklistValues>
-                <fullName>No</fullName>
+                <fullName>Full</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Yes</fullName>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Experimental</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -121,26 +163,12 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>CustomerPriority__c</fullName>
+        <fullName>Image_URL__c</fullName>
         <externalId>false</externalId>
-        <label>Customer Priority</label>
-        <picklist>
-            <picklistValues>
-                <fullName>High</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Medium</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <label>Image URL</label>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
+        <type>Url</type>
     </fields>
     <fields>
         <fullName>Industry</fullName>
@@ -278,10 +306,10 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>NumberofLocations__c</fullName>
+        <fullName>Loans_Posted__c</fullName>
         <externalId>false</externalId>
-        <label>Number of Locations</label>
-        <precision>3</precision>
+        <label>Loans Posted</label>
+        <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
@@ -320,6 +348,48 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Partner_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Partner Id</label>
+        <precision>8</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Portfolio_Yield_Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Portfolio Yield Note</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Portfolio_Yield__c</fullName>
+        <externalId>false</externalId>
+        <label>Portfolio Yield</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profitability__c</fullName>
+        <externalId>false</externalId>
+        <label>Profitability</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Rating</fullName>
         <picklist>
             <picklistValues>
@@ -339,48 +409,44 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>SLAExpirationDate__c</fullName>
+        <fullName>Rating__c</fullName>
         <externalId>false</externalId>
-        <label>SLA Expiration Date</label>
+        <label>Rating</label>
+        <precision>4</precision>
         <required>false</required>
+        <scale>1</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Date</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SLASerialNumber__c</fullName>
+        <fullName>Start_Date__c</fullName>
         <externalId>false</externalId>
-        <label>SLA Serial Number</label>
-        <length>10</length>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SLA__c</fullName>
+        <fullName>Total_Amount_Raised__c</fullName>
         <externalId>false</externalId>
-        <label>SLA</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Silver</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platinum</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <label>Total Amount Raised</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Type</fullName>
@@ -415,28 +481,6 @@
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>UpsellOpportunity__c</fullName>
-        <externalId>false</externalId>
-        <label>Upsell Opportunity</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Maybe</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
     <listViews>
