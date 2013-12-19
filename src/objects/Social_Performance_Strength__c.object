@@ -62,14 +62,14 @@
     </fields>
     <fields>
         <fullName>Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
         <externalId>true</externalId>
         <label>Id</label>
-        <precision>3</precision>
+        <length>3</length>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
+        <type>Text</type>
         <unique>true</unique>
     </fields>
     <label>Social Performance Strength</label>

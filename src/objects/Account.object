@@ -103,6 +103,46 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Avg_Loan_Size_Percent_Per_Capita_income__c</fullName>
+        <externalId>false</externalId>
+        <label>Avg Loan Size Percent Per Capita Income</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charges_Fees_and_Interest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Charges Fees and Interest</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Country_Codes__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Codes</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_Exchange_Loss_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Exchange Loss Rate</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>14</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Default_Rate_Note__c</fullName>
         <externalId>false</externalId>
         <label>Default Rate Note</label>
@@ -306,6 +346,17 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Loans_At_Risk_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Loans At Risk Rate</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>14</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Loans_Posted__c</fullName>
         <externalId>false</externalId>
         <label>Loans Posted</label>
@@ -346,6 +397,16 @@
     <fields>
         <fullName>ParentId</fullName>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PartnerStrength_Ids__c</fullName>
+        <externalId>false</externalId>
+        <label>PartnerStrength Ids</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Partner_Id__c</fullName>
@@ -412,11 +473,10 @@
         <fullName>Rating__c</fullName>
         <externalId>false</externalId>
         <label>Rating</label>
-        <precision>4</precision>
+        <length>20</length>
         <required>false</required>
-        <scale>1</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Number</type>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
